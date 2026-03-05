@@ -1,20 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/src/components/header";
+import Footer from "@/src/components/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
-  title: "Parcial 1",
-  description: "App Parcial 1 Web",
+  title: "Listado de personajes - HarryPotterApp",
+  description: "Explora el universo mágico de Harry Potter: un listado completo de personajes con su casa, especie y datos principales.",
 };
 
 export async function generateStaticParams() {
@@ -32,10 +25,12 @@ export default async function RootLayout({
 
   return (
     <html lang={lang}>{}
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body>
+      <Header></Header>
+      <main>
         {children}
+      </main>
+      <Footer></Footer>
       </body>
     </html>
   );
