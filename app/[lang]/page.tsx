@@ -19,7 +19,9 @@ export default async function Home( {
     <div className="flex flex-col col-3 items-center justify-center bg-[#e0e0e0]">
       <main className="">
         <h1>Personajes de Harry Potter</h1>
-        <p></p>
+        <p>Explora el universo mágico de Harry Potter: un listado
+completo de personajes con su casa, especie y datos
+principales</p>
         
         <ul>
       {posts.map((post) => (
