@@ -4,12 +4,34 @@ const nextConfig: NextConfig = {
   /* config options here */
 };
 
+// next.config.ts
+
 module.exports = {
   images: {
-    remotePatterns: [new URL('https://ik.imagekit.io/*'), new URL('http://www.clipartmax.com/png/full/71-713336_harry-potter-logo-harry-potter-logo-png.png')], 
-
- 
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'www.clipartmax.com',
+        port: '',
+        pathname: '/**',
+        search: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'hp-api.onrender.com',
+        port: '',
+        pathname: '/**',
+        search: '',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ik.imagekit.io',
+        port: '',
+        pathname: '/**',
+        search: '',
+      },
+    ],
   },
-}
+};
 
 export default nextConfig;

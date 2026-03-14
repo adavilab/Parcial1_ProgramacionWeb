@@ -1,4 +1,14 @@
 {
   "welcome": "Bienvenido",
-  "profile": "Perfil"
+  "profile": "Perfil",
+  "footer": {
+    "rights": "© 2026 Harry Potter App. Todos los derechos reservados.",
+    "developed": "Desarrollado para: ISIS3710"
+  },
+  
+  "main": {
+    "title": "Personajes de Harry Potter",
+    "subtitle": "Explora el universo mágico de Harry Potter: un listado completo de personajes con su casa, especie y datos principales"
+  }
+
 }

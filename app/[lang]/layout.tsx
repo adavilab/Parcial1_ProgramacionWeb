@@ -26,11 +26,11 @@ export default async function RootLayout({
   return (
     <html lang={lang}>{}
       <body>
-      <Header></Header>
+      <Header lang={lang}></Header>
       <main>
         {children}
       </main>
-      <Footer></Footer>
+      <Footer lang={lang}></Footer>
       </body>
     </html>
   );
