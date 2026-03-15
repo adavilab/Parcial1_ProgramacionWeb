@@ -21,12 +21,12 @@ export default async function Home( {
   const chars = await getChars();
 
   return (
-    <div className="flex flex-col items-center bg-[#e0e0e0] pt-4 min-h-screen">
-      <main className="h-full ">
+    <div className="flex flex-col items-center bg-[#e0e0e0] pt-4 min-h-screen pb-4">
+      <main className="w-full max-w-6xl">
         <h1 className="text-center text-[#FDB608] font-bold text-xl">{dict.main.title}</h1>
-        <p className="text-center text-sm">{dict.main.subtitle}.</p>
+        <p className="text-center text-sm pt-4">{dict.main.subtitle}.</p>
 
-        <div className="grid grid-cols-3 gap-4 justify-between">
+        <div className="grid grid-cols-3 gap-8 pt-4">
           {chars.map((char: any) => (
             <HpCard key={char.id} character={char} lang={lang} />
           ))}

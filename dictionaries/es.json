@@ -9,6 +9,14 @@
   "main": {
     "title": "Personajes de Harry Potter",
     "subtitle": "Explora el universo mágico de Harry Potter: un listado completo de personajes con su casa, especie y datos principales"
+  },
+
+  "char": {
+    "house": "Casa",
+    "gender": "Género",
+    "wand": "Varita",
+    "wood": "Madera",
+    "length": "Longitud"
   }
 
 }

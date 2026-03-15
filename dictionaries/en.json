@@ -8,5 +8,13 @@
   "main": {
     "title": "Harry Potter Characters",
     "subtitle": "Explore the Wizarding World of Harry Potter: A complete list of characters with their house, species and fun facts"
+  },
+
+  "char": {
+    "house": "House",
+    "gender": "Gender",
+    "wand": "Wand",
+    "wood": "Wood",
+    "length": "Length"
   }
 }
