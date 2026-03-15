@@ -15,7 +15,7 @@ export default function HpCard({ character, lang }: { character: any, lang: stri
   return (
     <Link href={`/${lang}/character/${character.id}`}>
       <div className="flex flex-col rounded-lg overflow-hidden h-full w-full">
-        <div className={`${houseColor} p-2 text-center text-white font-bold text-sm`}>
+        <div className={`${houseColor} p-4 text-center text-white font-bold text-md`}>
           {character.name}
         </div>
         
